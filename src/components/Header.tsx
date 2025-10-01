@@ -1,5 +1,6 @@
 import React from "react";
-import "./Header.scss";
+import styles from "./Header.module.scss";
+import classNames from "classnames";
 
 const Header: React.FC = () => {
   const navigationItems = [
@@ -13,28 +14,28 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="header">
-      <div className="header__container">
-        <div className="header__nav">
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <div className={styles.nav}>
           {/* Logo Section */}
-          <div className="header__logo">
-            <div className="header__logo-container">
+          <div className={styles.logo}>
+            <div className={styles.logo_container}>
               {/* 3D Printing Icon */}
-              <div className="header__logo-icon"></div>
+              <div className={styles.logo_icon}></div>
 
-              <div className="header__logo-text">
+              <div className={styles.logo_text}>
                 <h1>自动化智能</h1>
                 <p>这是一个自动化智能网站</p>
               </div>
             </div>
           </div>
 
-          <div className="header__right">
+          <div className={styles.right}>
             {/* Navigation Menu */}
-            <nav className="header__navigation">
-              <div className="header__navigation-list curly-container">
+            <nav className={styles.navigation}>
+              <div className={classNames(styles.navigation_list, "curly_container")}>
                 {navigationItems.map((item) => (
-                  <a key={item} href="#" className="header__navigation-item">
+                  <a key={item} href="#" className={styles.navigation_item}>
                     {item}
                   </a>
                 ))}
@@ -43,7 +44,9 @@ const Header: React.FC = () => {
 
             {/* Get a Quote Button */}
             <div>
-              <button className="header__quote-button curly-container">联系我们</button>
+              <button className={classNames(styles.quote_button, "curly_container")}>
+                联系我们
+              </button>
             </div>
           </div>
         </div>
