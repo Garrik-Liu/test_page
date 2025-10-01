@@ -25,22 +25,6 @@
   @apply text-white text-xl mb-6;
 }
 
-.contact_us_btn {
-  @apply border-0 cursor-pointer font-medium text-base transition-all duration-200 bg-blue-600 text-white;
-
-  &:hover {
-    @apply bg-white text-black;
-  }
-}
-
-.check_more_product_btn {
-  @apply border-0 cursor-pointer font-medium text-base transition-all duration-200 bg-slate-800 text-white;
-
-  &:hover {
-    @apply bg-white text-black;
-  }
-}
-
 .btn_group {
   @apply flex gap-5;
 }

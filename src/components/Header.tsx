@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import classNames from "classnames";
+import { Button } from "@heroui/react";
 
 const Header: React.FC = () => {
   const navigationItems = [
@@ -33,7 +34,12 @@ const Header: React.FC = () => {
           <div className={styles.right}>
             {/* Navigation Menu */}
             <nav className={styles.navigation}>
-              <div className={classNames(styles.navigation_list, "curly_container")}>
+              <div
+                className={classNames(
+                  styles.navigation_list,
+                  "curly_container"
+                )}
+              >
                 {navigationItems.map((item) => (
                   <a key={item} href="#" className={styles.navigation_item}>
                     {item}
@@ -42,12 +48,14 @@ const Header: React.FC = () => {
               </div>
             </nav>
 
-            {/* Get a Quote Button */}
-            <div>
-              <button className={classNames(styles.quote_button, "curly_container")}>
-                联系我们
-              </button>
-            </div>
+            <Button
+              className="main_btn"
+              color="primary"
+              radius="full"
+              size="lg"
+            >
+              联系我们
+            </Button>
           </div>
         </div>
       </div>

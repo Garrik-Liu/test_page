@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import styles from "./App.module.scss";
 import classNames from "classnames";
+import { Button, Card } from "@heroui/react";
 
 function App() {
   return (
@@ -17,10 +18,16 @@ function App() {
           </p>
 
           <div className={styles.btn_group}>
-            <div className={classNames("curly_container", styles.contact_us_btn)}>联系我们</div>
-            <div className={classNames("curly_container", styles.check_more_product_btn)}>
+            <Button className="main_btn" radius="full" size="lg">
+              联系我们
+            </Button>
+            <Button className="second_btn" radius="full" size="lg">
               查看商品
-            </div>
+            </Button>
+          </div>
+
+          <div>
+            <Card>123</Card>
           </div>
         </div>
       </main>
