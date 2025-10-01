@@ -1,0 +1,95 @@
+// Header组件的SCSS样式
+.header {
+  color: white;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0px 40px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &-container {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+      background-color: #2563eb;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.75rem;
+    }
+
+    &-text {
+      h1 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      p {
+        font-size: 0.75rem;
+        color: #d1d5db; // gray-300
+        margin: 0;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__navigation {
+    &-list {
+      background-color: #00060f;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &-item {
+      color: #fff; // gray-300
+      text-decoration: none;
+      padding: 1rem 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: #3a6afd;
+      }
+    }
+  }
+
+  &__quote-button {
+    background-color: #3a6afd; // blue-600
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #fff; // blue-700
+      color: #00060f;
+    }
+  }
+}
