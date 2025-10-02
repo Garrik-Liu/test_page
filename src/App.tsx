@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Section from "./components/Section";
 import CardGroup from "./components/CardGroup";
 import styles from "./App.module.scss";
-import { Button, Card, CardBody } from "@heroui/react";
+import { Button, Card } from "@heroui/react";
 
 const productCategoryList = [
   {

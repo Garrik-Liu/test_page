@@ -1,4 +1,4 @@
-import { Card, CardBody, CardHeader } from "@heroui/react";
+import { Card } from "@heroui/react";
 import styles from "./index.module.scss";
 
 interface CardData {
