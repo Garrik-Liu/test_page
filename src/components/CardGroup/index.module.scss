@@ -1,0 +1,21 @@
+@reference "tailwindcss";
+
+.card_container {
+  @apply flex flex-row justify-center gap-4 bg-slate-800 opacity-90 px-4;
+}
+
+.card {
+  @apply flex gap-2;
+}
+
+.card_bar {
+  @apply w-3 h-30 bg-blue-600 mt-5 rounded-full;
+}
+
+.card_content {
+  @apply bg-transparent text-white p-4 text-sm;
+}
+
+.card_title {
+  @apply font-bold mb-2 text-lg;
+}

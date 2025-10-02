@@ -1,0 +1,28 @@
+@reference "tailwindcss";
+
+.section {
+  @apply h-screen max-h-250 overflow-hidden relative  px-30;
+}
+
+.section_container {
+  @apply h-full overflow-hidden relative flex justify-center flex-col;
+}
+
+.section_title {
+  @apply absolute top-0 p-4 w-80 bg-white rounded-b-xl font-bold text-lg;
+}
+
+.video_bg {
+  @apply absolute top-0 left-0 h-full w-full object-cover object-center z-0;
+}
+
+.content {
+  @apply relative z-10;
+}
+
+.background_image {
+  @apply absolute top-0 bottom-0 left-0 right-0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

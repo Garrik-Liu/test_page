@@ -1,30 +1,60 @@
 @reference "tailwindcss";
 
 .app {
-  @apply min-h-screen bg-slate-800 bg-cover bg-no-repeat py-8;
-  background-image: url("https://static.wixstatic.com/media/c837a6_12191520cc14491e89ef1e75e5bbf40d~mv2.jpg/v1/fill/w_2541,h_3667,al_c,q_90,enc_avif,quality_auto/c837a6_12191520cc14491e89ef1e75e5bbf40d~mv2.jpg");
+  @apply min-h-screen bg-slate-800;
 }
 
-.main {
-  @apply mx-auto py-8 px-4;
-}
-
-.section {
-  @apply h-screen max-h-screen overflow-hidden px-10;
-}
-
-.main_section {
-  @apply flex items-center justify-center flex-col;
-}
-
-.title {
-  @apply leading-none text-6xl font-bold text-white mb-4 mt-0;
-}
-
-.description {
-  @apply text-white text-xl mb-6;
+.header {
+  position: fixed;
 }
 
 .btn_group {
   @apply flex gap-5;
+}
+
+.card_group {
+  @apply flex flex-row items-center justify-center gap-8 mt-20 p-4 bg-slate-800 text-white h-40;
+}
+
+.product_category_card_list {
+  @apply grid grid-flow-col grid-rows-1 gap-4;
+}
+
+.product_category_card {
+  @apply relative col-auto h-[150px];
+
+  .product_category_card_image {
+    @apply object-cover h-full w-full overflow-hidden;
+    transition: transform 0.4s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .product_category_card_footer {
+    @apply absolute w-full bottom-0 flex justify-center items-center z-10 font-medium;
+  }
+}
+
+.section_view_card_group {
+  @apply my-8;
+}
+
+.product_category_card_intro_list {
+  @apply grid grid-flow-col grid-rows-2 gap-4 mt-20;
+
+  .product_category_card {
+    @apply h-[250px];
+  }
+
+  .product_category_card_image {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .product_category_card_footer {
+    @apply bg-slate-900/70 text-white py-2;
+  }
 }
